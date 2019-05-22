@@ -63,7 +63,7 @@ pprint(player_prefs) -- Example:
 -- unity.player_session_count = "6",
 -- SomeIntField = 100,
 -- some_string_field = "some_sctring_for example-just-test@"
-}]--
+--}
 print(path_to_the_pp_file) -- Example: /Users/your_user_name/Library/Preferences/unity.TestCompany.TestProduct.plist
 ```
 
