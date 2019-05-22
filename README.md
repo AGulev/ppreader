@@ -75,5 +75,5 @@ PPReader library uses [XML2LUA](https://github.com/manoelcampos/xml2lua).
 
 ## Issues and suggestions
 
-If you have any issues, questions or suggestions please [create an issue](https://github.com/AGulev/uptime/issues) or contact me: me@agulev.com
+If you have any issues, questions or suggestions please [create an issue](https://github.com/AGulev/ppreader/issues) or contact me: me@agulev.com
 Feel free to make a pull request if you know how to improve the code.
