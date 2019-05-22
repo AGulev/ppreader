@@ -69,8 +69,9 @@ print(path_to_the_pp_file) -- Example: /Users/your_user_name/Library/Preferences
 
 ## Special thanks
 
-Library uses [XML2LUA](https://github.com/manoelcampos/xml2lua).
+PPReader library uses [XML2LUA](https://github.com/manoelcampos/xml2lua).
 
 ## Issues and suggestions
 
-If you have any issues, questions or suggestions please [create an issue](https://github.com/AGulev/uptime/issues), make a pull request or contact me: me@agulev.com
+If you have any issues, questions or suggestions please [create an issue](https://github.com/AGulev/uptime/issues) or contact me: me@agulev.com
+Feel free to make a pull request if you know how to improve the code.
