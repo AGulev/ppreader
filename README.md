@@ -5,7 +5,7 @@ This library helps to read Unity PlayerPrefs file as a Lua table.
 
 ## Possible use cases:
 
-* If you want to update your Unity game with Defold version of the game and the user's progress are stored in PlayerPrefs.
+* If you want to update your Unity game with Defold version of the game and the user's progress is stored in PlayerPrefs.
 
 ## Platforms
 
