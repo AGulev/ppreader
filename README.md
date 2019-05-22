@@ -50,6 +50,8 @@ Where `YourCompanyName` is the name of the company from your Unity project (`Pro
 Returns table with PlayerPrefs values and path to the file:
 
 ```lua
+local ppreader = require("ppreader.ppreader")
+
 local player_prefs, path_to_the_pp_file = ppreader.get()
 pprint(player_prefs) -- Example:
 --{
