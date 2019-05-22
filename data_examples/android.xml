@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="unity.player_sessionid">1742110367642789867</string>
+    <string name="unity.cloud_userid">d475ba813ddfcc85994003a9a0d2c3c6</string>
+    <int name="Screenmanager%20Fullscreen%20mode" value="-1" />
+    <int name="SomeIntField" value="100" />
+    <string name="some_string_field">some_sctring_for%20example-just-test%40</string>
+    <int name="Screenmanager%20Resolution%20Height" value="1920" />
+    <string name="unity.player_session_count">1</string>
+    <int name="Screenmanager%20Resolution%20Width" value="1080" />
+    <float name="some_FloatField" value="2.3304" />
+    <int name="__UNITY_PLAYERPREFS_VERSION__" value="1" />
+</map>

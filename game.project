@@ -1,0 +1,30 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 640
+
+[project]
+title = PlayerPrefsReader
+dependencies = 
+
+[android]
+package = com.TestCompany.TestProduct
+
+[library]
+include_dirs = ppreader
+
+[ppreader]
+company_name = TestCompany
+product_name = TestProduct
+
+[osx]
+bundle_identifier = com.Company.ProductName
+
+[ios]
+bundle_identifier = com.Company.ProductName
+
