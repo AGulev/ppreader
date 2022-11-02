@@ -15,19 +15,7 @@ static int ppread(lua_State* L) {
     const char* result = PPReader_read(result_path);
     bool is_fail = false;
     if(result) {
-      dmJson::Document doc;
-      dmJson::Result r = dmJson::Parse(result, &doc);
-      if (r == dmJson::RESULT_OK && doc.m_NodeCount > 0) {
-        char error_str_out[128];
-        if (dmScript::JsonToLua(L, &doc, 0, error_str_out, sizeof(error_str_out)) < 0) {
-          dmLogError("Failed converting object JSON to Lua; %s", error_str_out);
-          is_fail = true;
-        }
-      } else {
-        dmLogError("Failed to parse JSON object(%d): (%s)", r, result);
-        is_fail = true;
-      }
-      dmJson::Free(&doc);
+      dmScript::JsonToLua(L, result, strlen(result)); // throws lua error if it fails
     } else {
       is_fail = true;
     }
