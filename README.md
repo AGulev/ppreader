@@ -3,6 +3,8 @@ PPReader [Native Extension](https://www.defold.com/manuals/extensions/) for the 
 
 This library helps to read Unity PlayerPrefs file as a Lua table.
 
+[![Build Status](https://github.com/AGulev/ppreader/workflows/Build%20with%20bob/badge.svg)](https://github.com/AGulev/ppreader/actions)
+
 ## Possible use cases:
 
 * If you want to update your Unity game with Defold version of the game and the user's progress is stored in PlayerPrefs.
