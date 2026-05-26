@@ -50,15 +50,15 @@ end
 
 local get_pathes  = {
 	["Darwin"] = function() --~/Library/Preferences/unity.[company name].[product name].plist where company and product names are the names set up in Project Settings
-		local company_name = sys.get_config("ppreader.company_name")
-		local product_name = sys.get_config("ppreader.product_name")
+		local company_name = sys.get_config_string("ppreader.company_name")
+		local product_name = sys.get_config_string("ppreader.product_name")
 		return {"~/Library/Preferences/unity."..company_name.."."..product_name..".plist"} 
 	end, 
 	["Linux"] = function() end, -- ~/.config/unity3d/[CompanyName]/[ProductName] again using the company and product names specified in the Project Settings.
 	["Windows"] = function() end, --HKCU\Software\[company name]\[product name] key, where company and product names are the names set up in Project Settings.
 	["HTML5"] = function() end, -- On WebGL, PlayerPrefs are stored using the browser's IndexedDB API.
 	["Android"] = function()
-		local package_name = sys.get_config("android.package")
+		local package_name = sys.get_config_string("android.package")
 		return {
 			"/data/data/"..package_name.."/shared_prefs/"..package_name..".v2.playerprefs.xml", --Unity >= 5.3 
 			--more info: http://www.yaku.to/blog/2016/01/24/Unity-QA-screws-us-again-or-how-we-learned-to-stop-worrying-and-fix-it-ourselves/
@@ -66,7 +66,7 @@ local get_pathes  = {
 		}
 	end, 
 	["iPhone OS"] = function() -- /Library/Preferences/[bundle identifier].plist.
-		local bundle_id = sys.get_config("ios.bundle_identifier")
+		local bundle_id = sys.get_config_string("ios.bundle_identifier")
 		return {
 			"~/Library/Preferences/"..bundle_id..".plist"
 		}
